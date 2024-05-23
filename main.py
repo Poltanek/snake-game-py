@@ -7,8 +7,8 @@ class Game():
     def __init__(self):
         pygame.init()
 
-        window_width = 250
-        window_height = 250
+        window_width = 300
+        window_height = 300
         window = pygame.display.set_mode((window_width, window_height))
         pygame.display.set_caption("Snake Game")
 
@@ -53,6 +53,7 @@ class Game():
 
             pygame.display.flip()
             time.sleep(2)
+            pygame.quit()
 
         while True:
             for event in pygame.event.get():
