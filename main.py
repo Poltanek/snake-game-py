@@ -5,8 +5,8 @@ import sys
 
 class Game():
     def __init__(self):
+        
         pygame.init()
-
         window_width = 300
         window_height = 300
         window = pygame.display.set_mode((window_width, window_height))
